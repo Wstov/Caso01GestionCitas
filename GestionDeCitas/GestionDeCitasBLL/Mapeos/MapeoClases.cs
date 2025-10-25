@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GestionDeCitasBLL.Dtos;
+using AutoMapper;
+using GestionDeCitasDAL.Entidades;
 
 namespace GestionDeCitasBLL.Mapeos
 {
-    internal class MapeoClases
+    public class MapeoClases : Profile
     {
+        public MapeoClases()
+        {
+            CreateMap<Cliente, ClienteDto>().ReverseMap();
+            CreateMap<Vehiculo, VehiculoDto>().ReverseMap();
+            CreateMap<Cita, CitaDto>().ReverseMap();
+        }
     }
 }

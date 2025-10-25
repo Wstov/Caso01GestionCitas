@@ -1,5 +1,84 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<GestionDeCitasBLL.Dtos.ClienteDto>
 @{
+    ViewData["Title"] = "Clientes";
 }
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Clientes</h2>
+    <button class="btn btn-primary" id="btnNuevo">Nuevo</button>
+</div>
+
+<table id="tblClientes" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.Identificacion</td>
+                <td>@c.Nombre</td>
+                <td>@c.Edad</td>
+                <td>
+                    <button class="btn btn-sm btn-warning btn-edit"
+                            data-id="@c.Id"
+                            data-identificacion="@c.Identificacion"
+                            data-nombre="@c.Nombre"
+                            data-edad="@c.Edad">
+                        Editar
+                    </button>
+
+                    <button class="btn btn-sm btn-danger btn-del" data-id="@c.Id">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="mainModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+$(function(){
+    const table = $('#tblClientes').DataTable();
+
+    $('#btnNuevo').on('click', function(){
+        $('#modalContent').load('/Clientes/Create', function(){
+            $('#mainModal').modal('show');
+        });
+    });
+
+    $('#tblClientes').on('click', '.btn-edit', function(){
+        const b = $(this).data();
+        const qs = $.param(b);
+        $('#modalContent').load('/Clientes/Edit?' + qs, function(){
+            $('#mainModal').modal('show');
+        });
+    });
+
+    $('#tblClientes').on('click', '.btn-del', function(){
+        const id = $(this).data('id');
+        $('#modalContent').load('/Clientes/Delete?id=' + id, function(){
+            $('#mainModal').modal('show');
+        });
+    });
+});
+</script>

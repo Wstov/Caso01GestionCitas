@@ -1,5 +1,72 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<GestionDeCitasBLL.Dtos.CitaDto>
+@using GestionDeCitasDAL.Entidades
 @{
+    ViewData["Title"] = "Citas";
 }
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Citas de lavado</h2>
+    <button class="btn btn-primary" id="btnNuevo">Nueva cita</button>
+</div>
+
+<table id="tblCitas" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>ClienteId</th>
+            <th>VehiculoId</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.ClienteId</td>
+                <td>@c.VehiculoId</td>
+                <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
+                <td>@c.Estado</td>
+                <td>
+                    <button class="btn btn-sm btn-info btn-estado"
+                            data-id="@c.Id" data-estadoactual="@((int)c.Estado)">
+                        Cambiar estado
+                    </button>
+                    <button class="btn btn-sm btn-danger btn-del" data-id="@c.Id">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="mainModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content" id="modalContent"></div></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $(function () {
+        const table = $('#tblCitas').DataTable();
+
+        $('#btnNuevo').on('click', function () {
+            $('#modalContent').load('/Citas/Create', function () { $('#mainModal').modal('show'); });
+        });
+
+        $('#tblCitas').on('click', '.btn-estado', function () {
+            const id = $(this).data('id');
+            const estadoActual = $(this).data('estadoactual');
+            $('#modalContent').load('/Citas/CambiarEstado?id=' + id + '&estadoActual=' + estadoActual, function () { $('#mainModal').modal('show'); });
+        });
+
+        $('#tblCitas').on('click', '.btn-del', function () {
+            const id = $(this).data('id');
+            $('#modalContent').load('/Citas/Delete?id=' + id, function () { $('#mainModal').modal('show'); });
+        });
+    });
+</script>

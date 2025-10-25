@@ -1,83 +1,53 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using GestionDeCitasBLL.Dtos;
+using GestionDeCitasBLL.Servicios;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionDeCitas.Controllers
 {
     public class ClientesController : Controller
     {
-        // GET: ClientesController
-        public ActionResult Index()
+        private readonly IClientesServicio _svc;
+
+        public ClientesController(IClientesServicio svc) => _svc = svc;
+
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var r = await _svc.ObtenerAsync();
+            return View(r.Data ?? new List<ClienteDto>());
         }
 
-        // GET: ClientesController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Create() => PartialView("_Form", new ClienteDto());
 
-        // GET: ClientesController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ClientesController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create(ClienteDto dto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _svc.AgregarAsync(dto);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Cliente registrado correctamente");
         }
 
-        // GET: ClientesController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Edit(int id, string identificacion, string nombre, int edad)
+            => PartialView("_Form", new ClienteDto { Id = id, Identificacion = identificacion, Nombre = nombre, Edad = edad });
 
-        // POST: ClientesController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(ClienteDto dto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _svc.ActualizarAsync(dto);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Cliente actualizado correctamente");
         }
 
-        // GET: ClientesController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Delete(int id) => PartialView("_Delete", id);
 
-        // POST: ClientesController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _svc.EliminarAsync(id);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Cliente eliminado");
         }
     }
 }

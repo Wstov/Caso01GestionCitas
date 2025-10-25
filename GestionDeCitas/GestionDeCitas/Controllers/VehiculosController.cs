@@ -1,83 +1,68 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using GestionDeCitasBLL.Dtos;
+using GestionDeCitasBLL.Servicios;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionDeCitas.Controllers
 {
     public class VehiculosController : Controller
     {
-        // GET: VehiculosController
-        public ActionResult Index()
+        private readonly IVehiculosServicio _vehiculosSvc;
+        private readonly IClientesServicio _clientesSvc;
+
+        public VehiculosController(IVehiculosServicio vehiculosSvc, IClientesServicio clientesSvc)
         {
-            return View();
+            _vehiculosSvc = vehiculosSvc;
+            _clientesSvc = clientesSvc;
         }
 
-        // GET: VehiculosController/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var r = await _vehiculosSvc.ObtenerAsync();
+            return View(r.Data ?? new List<VehiculoDto>());
         }
 
-        // GET: VehiculosController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Create() => PartialView("_Form", new VehiculoDto());
 
-        // POST: VehiculosController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create(VehiculoDto dto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _vehiculosSvc.AgregarAsync(dto);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Vehículo registrado correctamente");
         }
 
-        // GET: VehiculosController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Edit(int id, string placa, string marca, int anio, int clienteId)
+            => PartialView("_Form", new VehiculoDto { Id = id, Placa = placa, Marca = marca, Anio = anio, ClienteId = clienteId });
 
-        // POST: VehiculosController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(VehiculoDto dto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _vehiculosSvc.ActualizarAsync(dto);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Vehículo actualizado correctamente");
         }
 
-        // GET: VehiculosController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Delete(int id) => PartialView("_Delete", id);
 
-        // POST: VehiculosController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _vehiculosSvc.EliminarAsync(id);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Vehículo eliminado");
+        }
+
+        // === Helpers para llenar selects ===
+        [HttpGet]
+        public async Task<IActionResult> GetClientes()
+        {
+            var res = await _clientesSvc.ObtenerAsync();
+            var list = (res.Data ?? new List<ClienteDto>())
+                .Select(c => new { id = c.Id, text = $"{c.Identificacion} - {c.Nombre}" });
+            return Json(list);
         }
     }
 }

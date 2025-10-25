@@ -1,0 +1,16 @@
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.csproj.AssemblyReference.cache
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.AssemblyInfoInputs.cache
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.AssemblyInfo.cs
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.csproj.CoreCompileInputs.cache
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.sourcelink.json
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\bin\Debug\net8.0\GestionDeCitasBLL.deps.json
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\bin\Debug\net8.0\GestionDeCitasBLL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\bin\Debug\net8.0\GestionDeCitasBLL.pdb
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\bin\Debug\net8.0\GestionDeCitasDAL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\bin\Debug\net8.0\GestionDeCitasDAL.pdb
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionD.6E4D1690.Up2Date
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\refint\GestionDeCitasBLL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\GestionDeCitasBLL.pdb
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasBLL\obj\Debug\net8.0\ref\GestionDeCitasBLL.dll

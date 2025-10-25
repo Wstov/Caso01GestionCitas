@@ -1,0 +1,13 @@
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.csproj.AssemblyReference.cache
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.AssemblyInfoInputs.cache
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.AssemblyInfo.cs
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.csproj.CoreCompileInputs.cache
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.sourcelink.json
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\bin\Debug\net8.0\GestionDeCitasDAL.deps.json
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\bin\Debug\net8.0\GestionDeCitasDAL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\bin\Debug\net8.0\GestionDeCitasDAL.pdb
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\refint\GestionDeCitasDAL.dll
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\GestionDeCitasDAL.pdb
+C:\Users\Wstov\Desktop\Programacion Avanzada Web\Caso01\Caso01GestionCitas\GestionDeCitas\GestionDeCitasDAL\obj\Debug\net8.0\ref\GestionDeCitasDAL.dll

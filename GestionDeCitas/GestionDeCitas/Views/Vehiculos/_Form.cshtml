@@ -1,0 +1,66 @@
+﻿@model GestionDeCitasBLL.Dtos.VehiculoDto
+
+<div class="modal-header">
+    <h5 class="modal-title">@((Model.Id == 0) ? "Nuevo vehículo" : "Editar vehículo")</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+    <form id="frmVehiculo">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-2">
+            <label class="form-label">Placa</label>
+            <input class="form-control" asp-for="Placa" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Marca</label>
+            <input class="form-control" asp-for="Marca" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Año</label>
+            <input type="number" class="form-control" asp-for="Anio" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Cliente</label>
+            <select class="form-select" id="ClienteId" name="ClienteId"></select>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button class="btn btn-primary" id="btnGuardarVeh">Guardar</button>
+</div>
+
+<script>
+    (function () {
+        const urlGetClientes = '@Url.Action("GetClientes", "Vehiculos")';
+        const urlPost = (@Model.Id == 0) ? '@Url.Action("Create", "Vehiculos")'
+            : '@Url.Action("Edit", "Vehiculos")';
+
+        // Cargar clientes en el select
+        $.getJSON(urlGetClientes)
+            .done(function (list) {
+                const $sel = $('#ClienteId');
+                $sel.empty().append(new Option('-- seleccione --', ''));
+                list.forEach(function (x) { $sel.append(new Option(x.text, x.id)); });
+
+                // Seleccionar si es edición
+                var current = '@Model.ClienteId';
+                if (current && parseInt(current) > 0) { $sel.val(current); }
+            })
+            .fail(function (xhr) {
+                console.error('GetClientes falló', xhr);
+                Swal.fire('Error', 'No se pudieron cargar los clientes', 'error');
+            });
+
+        // Guardar
+        $('#btnGuardarVeh').on('click', function () {
+            const data = $('#frmVehiculo').serialize();
+            $.post(urlPost, data)
+                .done(function (msg) { Swal.fire('Éxito', msg, 'success').then(() => location.reload()); })
+                .fail(function (xhr) { Swal.fire('Error', xhr.responseText || 'Ocurrió un error', 'error'); });
+        });
+    })();
+</script>
+

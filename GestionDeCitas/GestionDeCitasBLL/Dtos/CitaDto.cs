@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GestionDeCitasDAL.Entidades;
+
 
 namespace GestionDeCitasBLL.Dtos
 {
-    internal class CitaDto
+    public class CitaDto
     {
+        public int Id { get; set; }
+        public int ClienteId { get; set; }
+        public int VehiculoId { get; set; }
+        public DateTime Fecha { get; set; }
+        public EstadoCita Estado { get; set; } = EstadoCita.Ingresada;
     }
 }

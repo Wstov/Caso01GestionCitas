@@ -1,0 +1,59 @@
+﻿@model GestionDeCitasBLL.Dtos.CitaDto
+
+<div class="modal-header">
+    <h5 class="modal-title">Nueva cita</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+    <form id="frmCita">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-2">
+            <label class="form-label">Cliente</label>
+            <select class="form-select" id="ClienteId" name="ClienteId"></select>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Vehículo</label>
+            <select class="form-select" id="VehiculoId" name="VehiculoId"></select>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Fecha</label>
+            <input type="date" class="form-control" asp-for="Fecha" />
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button class="btn btn-primary" id="btnGuardarCita">Guardar</button>
+</div>
+
+<script>
+    (function () {
+        function cargarClientes() {
+            $.get('/Citas/GetClientes').done(list => {
+                const $c = $('#ClienteId'); $c.empty();
+                $c.append(new Option('-- seleccione --', ''));
+                list.forEach(x => $c.append(new Option(x.Texto || x.texto, x.Id || x.id)));
+            });
+        }
+        function cargarVehiculos(clienteId) {
+            const $v = $('#VehiculoId'); $v.empty();
+            if (!clienteId) { $v.append(new Option('-- seleccione un cliente --', '')); return; }
+            $.get('/Citas/GetVehiculosPorCliente?clienteId=' + clienteId).done(list => {
+                $v.append(new Option('-- seleccione --', ''));
+                list.forEach(x => $v.append(new Option(x.Texto || x.texto, x.Id || x.id)));
+            });
+        }
+
+        cargarClientes();
+        $('#ClienteId').on('change', function () { cargarVehiculos($(this).val()); });
+
+        $('#btnGuardarCita').on('click', function () {
+            const data = $('#frmCita').serialize();
+            $.post('/Citas/Create', data)
+                .done(msg => Swal.fire('Éxito', msg, 'success').then(() => location.reload()))
+                .fail(xhr => Swal.fire('Error', xhr.responseText || 'Ocurrió un error', 'error'));
+        });
+    })();
+</script>

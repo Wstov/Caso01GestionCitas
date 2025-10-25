@@ -1,83 +1,80 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using GestionDeCitasBLL.Dtos;
+using GestionDeCitasBLL.Servicios;
+using GestionDeCitasDAL.Entidades;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionDeCitas.Controllers
 {
     public class CitasController : Controller
     {
-        // GET: CitasController
-        public ActionResult Index()
+        private readonly ICitasServicio _citasSvc;
+        private readonly IClientesServicio _clientesSvc;
+        private readonly IVehiculosServicio _vehiculosSvc;
+
+        public CitasController(ICitasServicio citasSvc, IClientesServicio clientesSvc, IVehiculosServicio vehiculosSvc)
         {
-            return View();
+            _citasSvc = citasSvc;
+            _clientesSvc = clientesSvc;
+            _vehiculosSvc = vehiculosSvc;
         }
 
-        // GET: CitasController/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var r = await _citasSvc.ObtenerAsync();
+            return View(r.Data ?? new List<CitaDto>());
         }
 
-        // GET: CitasController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Create() => PartialView("_Form", new CitaDto { Fecha = DateTime.Today });
 
-        // POST: CitasController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create(CitaDto dto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _citasSvc.AgregarAsync(dto);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Cita registrada correctamente");
         }
 
-        // GET: CitasController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult CambiarEstado(int id, int estadoActual)
+            => PartialView("_CambiarEstado", new CitaDto { Id = id, Estado = (EstadoCita)estadoActual });
 
-        // POST: CitasController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> CambiarEstadoConfirm(int id, int nuevoEstado)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _citasSvc.CambiarEstadoAsync(id, nuevoEstado);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Estado actualizado");
         }
 
-        // GET: CitasController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        [HttpGet]
+        public IActionResult Delete(int id) => PartialView("_Delete", id);
 
-        // POST: CitasController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var r = await _citasSvc.EliminarAsync(id);
+            if (r.EsError) return BadRequest(r.Mensaje);
+            return Ok("Cita eliminada");
+        }
+
+        // === Helpers para selects dependientes ===
+        [HttpGet]
+        public async Task<IActionResult> GetClientes()
+        {
+            var r = await _clientesSvc.ObtenerAsync();
+            var items = (r.Data ?? new List<ClienteDto>()).Select(c => new { c.Id, Texto = $"{c.Identificacion} - {c.Nombre}" });
+            return Json(items);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetVehiculosPorCliente(int clienteId)
+        {
+            var r = await _vehiculosSvc.ObtenerAsync();
+            var items = (r.Data ?? new List<VehiculoDto>())
+                .Where(v => v.ClienteId == clienteId)
+                .Select(v => new { v.Id, Texto = $"{v.Placa} - {v.Marca} ({v.Anio})" });
+            return Json(items);
         }
     }
 }

@@ -1,0 +1,40 @@
+﻿@model GestionDeCitasBLL.Dtos.ClienteDto
+
+<div class="modal-header">
+    <h5 class="modal-title">@((Model.Id == 0) ? "Nuevo cliente" : "Editar cliente")</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<div class="modal-body">
+    <form id="frmCliente">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-2">
+            <label class="form-label">Identificación</label>
+            <input class="form-control" asp-for="Identificacion" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Nombre</label>
+            <input class="form-control" asp-for="Nombre" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Edad</label>
+            <input type="number" class="form-control" asp-for="Edad" />
+            <div class="form-text">Debe ser mayor o igual a 18.</div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button class="btn btn-primary" id="btnGuardar">Guardar</button>
+</div>
+
+<script>
+    $('#btnGuardar').on('click', function () {
+        const data = $('#frmCliente').serialize();
+        const url = (@Model.Id == 0) ? '/Clientes/Create' : '/Clientes/Edit';
+        $.post(url, data)
+            .done(msg => Swal.fire('Éxito', msg, 'success').then(() => location.reload()))
+            .fail(xhr => Swal.fire('Error', xhr.responseText || 'Ocurrió un error', 'error'));
+    });
+</script>

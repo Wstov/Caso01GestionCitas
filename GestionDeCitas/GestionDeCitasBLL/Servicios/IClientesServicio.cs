@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GestionDeCitasBLL.Dtos;
+
 
 namespace GestionDeCitasBLL.Servicios
 {
-    internal class IClientesServicio
+    public interface IClientesServicio
     {
+        Task<CustomResponse<List<ClienteDto>>> ObtenerAsync();
+        Task<CustomResponse<ClienteDto>> AgregarAsync(ClienteDto dto);
+        Task<CustomResponse<ClienteDto>> ActualizarAsync(ClienteDto dto);
+        Task<CustomResponse<ClienteDto>> EliminarAsync(int id);
     }
 }

@@ -1,27 +1,33 @@
+using GestionDeCitasBLL.Mapeos;
+using GestionDeCitasBLL.Servicios;
+using GestionDeCitasBLL.Servicios.GestionDeCitasBLL.Servicios;
+using GestionDeCitasDAL.Repositorios;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Repos en memoria (viven mientras corre la app)
+builder.Services.AddSingleton<IClientesRepositorio, ClientesRepositorio>();
+builder.Services.AddSingleton<IVehiculosRepositorio, VehiculosRepositorio>();
+builder.Services.AddSingleton<ICitasRepositorio, CitasRepositorio>();
+
+// Servicios
+builder.Services.AddScoped<IClientesServicio, ClientesServicio>();
+builder.Services.AddScoped<IVehiculosServicio, VehiculosServicio>();
+builder.Services.AddScoped<ICitasServicio, CitasServicio>();
+
+// AutoMapper
+builder.Services.AddAutoMapper(cfg => { }, typeof(MapeoClases));
+
 var app = builder.Build();
+if (!app.Environment.IsDevelopment()) app.UseExceptionHandler("/Home/Error");
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
-app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Clientes}/{action=Index}/{id?}");
 
 app.Run();

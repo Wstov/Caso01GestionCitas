@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GestionDeCitasBLL.Dtos;
+
 
 namespace GestionDeCitasBLL.Servicios
 {
-    internal class IVehiculosServicio
+    public interface IVehiculosServicio
     {
+        Task<CustomResponse<List<VehiculoDto>>> ObtenerAsync();
+        Task<CustomResponse<VehiculoDto>> AgregarAsync(VehiculoDto dto);
+        Task<CustomResponse<VehiculoDto>> ActualizarAsync(VehiculoDto dto);
+        Task<CustomResponse<VehiculoDto>> EliminarAsync(int id);
     }
 }

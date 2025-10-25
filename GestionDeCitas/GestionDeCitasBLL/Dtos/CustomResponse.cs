@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace GestionDeCitasBLL.Dtos
 {
-    internal class CustomResponse
+    public class CustomResponse<T>
     {
+        public bool EsError { get; set; } = false;
+        public string Mensaje { get; set; } = "";
+        public T? Data { get; set; }
     }
 }

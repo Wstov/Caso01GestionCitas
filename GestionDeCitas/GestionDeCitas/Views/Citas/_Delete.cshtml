@@ -1,0 +1,19 @@
+﻿@model int
+<div class="modal-header">
+    <h5 class="modal-title">Eliminar cita</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+    ¿Seguro que desea eliminar la cita con ID @Model?
+</div>
+<div class="modal-footer">
+    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button class="btn btn-danger" id="btnEliminarCita">Eliminar</button>
+</div>
+<script>
+    $('#btnEliminarCita').on('click', function () {
+        $.post('/Citas/DeleteConfirmed', { id: @Model })
+            .done(msg => Swal.fire('Éxito', msg, 'success').then(() => location.reload()))
+            .fail(xhr => Swal.fire('Error', xhr.responseText || 'No se pudo eliminar', 'error'));
+    });
+</script>

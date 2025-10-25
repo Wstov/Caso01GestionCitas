@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeCitas", "GestionDeCitas\GestionDeCitas.csproj", "{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeCitas", "GestionDeCitas\GestionDeCitas.csproj", "{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2E6A5D73-D7FF-43E7-B641-9F26D0A5887D} = {2E6A5D73-D7FF-43E7-B641-9F26D0A5887D}
+		{5C389A6A-2C1A-4898-A255-0114A3A6A640} = {5C389A6A-2C1A-4898-A255-0114A3A6A640}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeCitasBLL", "GestionDeCitasBLL\GestionDeCitasBLL.csproj", "{5C389A6A-2C1A-4898-A255-0114A3A6A640}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeCitasBLL", "GestionDeCitasBLL\GestionDeCitasBLL.csproj", "{5C389A6A-2C1A-4898-A255-0114A3A6A640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeCitasDAL", "GestionDeCitasDAL\GestionDeCitasDAL.csproj", "{2E6A5D73-D7FF-43E7-B641-9F26D0A5887D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,10 @@ Global
 		{5C389A6A-2C1A-4898-A255-0114A3A6A640}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C389A6A-2C1A-4898-A255-0114A3A6A640}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C389A6A-2C1A-4898-A255-0114A3A6A640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6A5D73-D7FF-43E7-B641-9F26D0A5887D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6A5D73-D7FF-43E7-B641-9F26D0A5887D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6A5D73-D7FF-43E7-B641-9F26D0A5887D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6A5D73-D7FF-43E7-B641-9F26D0A5887D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
