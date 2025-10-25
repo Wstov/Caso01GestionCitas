@@ -1,0 +1,456 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\servicios\\citasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\servicios\\citasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\servicios\\vehiculosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\servicios\\vehiculosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\servicios\\clientesservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\servicios\\clientesservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\servicios\\icitasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\servicios\\icitasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\servicios\\ivehiculosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\servicios\\ivehiculosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\servicios\\iclientesservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\servicios\\iclientesservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\mapeos\\mapeoclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\mapeos\\mapeoclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\dtos\\customresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\dtos\\customresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\dtos\\citadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\dtos\\citadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\dtos\\vehiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\dtos\\vehiculodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitasbll\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C389A6A-2C1A-4898-A255-0114A3A6A640}|GestionDeCitasBLL\\GestionDeCitasBLL.csproj|solutionrelative:gestiondecitasbll\\dtos\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\citas\\_cambiarestado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\citas\\_cambiarestado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\citas\\_createedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\citas\\_createedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\citas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\vehiculos\\_delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\vehiculos\\_delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\vehiculos\\_createedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\vehiculos\\_createedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\vehiculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\vehiculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\clientes\\_delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\clientes\\_delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\clientes\\_createedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\clientes\\_createedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\views\\shared\\_modal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\views\\shared\\_modal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|c:\\users\\wstov\\source\\repos\\gestiondecitas\\gestiondecitas\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D8BEC6A-5096-4CCE-B5CA-51F9D8BEDFDF}|GestionDeCitas\\GestionDeCitas.csproj|solutionrelative:gestiondecitas\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CitasServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\CitasServicio.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Servicios\\CitasServicio.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\CitasServicio.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Servicios\\CitasServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:12:19.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehiculosServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\VehiculosServicio.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Servicios\\VehiculosServicio.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\VehiculosServicio.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Servicios\\VehiculosServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:12:11.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientesServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\ClientesServicio.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Servicios\\ClientesServicio.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\ClientesServicio.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Servicios\\ClientesServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:12:03.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICitasServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\ICitasServicio.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Servicios\\ICitasServicio.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\ICitasServicio.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Servicios\\ICitasServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:11:54.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IVehiculosServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\IVehiculosServicio.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Servicios\\IVehiculosServicio.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\IVehiculosServicio.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Servicios\\IVehiculosServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:11:43.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IClientesServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\IClientesServicio.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Servicios\\IClientesServicio.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Servicios\\IClientesServicio.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Servicios\\IClientesServicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:11:34.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MapeoClases.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Mapeos\\MapeoClases.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Mapeos\\MapeoClases.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Mapeos\\MapeoClases.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Mapeos\\MapeoClases.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:11:16.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\CustomResponse.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Dtos\\CustomResponse.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\CustomResponse.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Dtos\\CustomResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:10:59.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CitaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\CitaDto.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Dtos\\CitaDto.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\CitaDto.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Dtos\\CitaDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:10:53.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehiculoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\VehiculoDto.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Dtos\\VehiculoDto.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\VehiculoDto.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Dtos\\VehiculoDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:10:46.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\ClienteDto.cs",
+              "RelativeDocumentMoniker": "GestionDeCitasBLL\\Dtos\\ClienteDto.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitasBLL\\Dtos\\ClienteDto.cs",
+              "RelativeToolTip": "GestionDeCitasBLL\\Dtos\\ClienteDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:10:37.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_CambiarEstado.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Citas\\_CambiarEstado.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Citas\\_CambiarEstado.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Citas\\_CambiarEstado.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Citas\\_CambiarEstado.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:09:54.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_CreateEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Citas\\_CreateEdit.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Citas\\_CreateEdit.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Citas\\_CreateEdit.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Citas\\_CreateEdit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:09:47.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Citas\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Citas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Citas\\Index.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Citas\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:09:40.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Vehiculos\\_Delete.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Vehiculos\\_Delete.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Vehiculos\\_Delete.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Vehiculos\\_Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:08:59.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_CreateEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Vehiculos\\_CreateEdit.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Vehiculos\\_CreateEdit.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Vehiculos\\_CreateEdit.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Vehiculos\\_CreateEdit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:08:52.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Vehiculos\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Vehiculos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Vehiculos\\Index.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Vehiculos\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:08:45.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Clientes\\_Delete.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Clientes\\_Delete.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Clientes\\_Delete.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Clientes\\_Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:08:19.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_CreateEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Clientes\\_CreateEdit.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Clientes\\_CreateEdit.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Clientes\\_CreateEdit.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Clientes\\_CreateEdit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:08:12.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Clientes\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Clientes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Clientes\\Index.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Clientes\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:08:01.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Modal.cshtml",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Shared\\_Modal.cshtml",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Views\\Shared\\_Modal.cshtml",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Views\\Shared\\_Modal.cshtml",
+              "RelativeToolTip": "GestionDeCitas\\Views\\Shared\\_Modal.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-25T01:07:34.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CitasController.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Controllers\\CitasController.cs",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Controllers\\CitasController.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Controllers\\CitasController.cs",
+              "RelativeToolTip": "GestionDeCitas\\Controllers\\CitasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:07:13.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VehiculosController.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Controllers\\VehiculosController.cs",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Controllers\\VehiculosController.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Controllers\\VehiculosController.cs",
+              "RelativeToolTip": "GestionDeCitas\\Controllers\\VehiculosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:07:05.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "GestionDeCitas\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Wstov\\source\\repos\\GestionDeCitas\\GestionDeCitas\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "GestionDeCitas\\Controllers\\ClientesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:06:56.231Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
